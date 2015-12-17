@@ -1,0 +1,37 @@
+<div class="row">
+
+  <div class="row">
+    <div class="col-md-8">Using the <div class="btn btn-danger">-</div> and <div class="btn btn-success">+</div> buttons, add your 10 gold coins to the follow categories:</div>
+    <div class="col-md-4"><span class="glyphicon glyphicon-piggy-bank"></span> = {{ totalCoins }}</div>
+  </div>
+
+
+  <div class="row categories">
+    <div class="col-md-7"><img src="images/entertainment.png">Entertainment</div><div class="col-md-5">
+      <button ng-click="addCoin(-1, 'entertainment')" class="btn btn-danger">-</button> <span> {{categories.entertainment}} </span>
+      <button ng-click="addCoin(1, 'entertainment')" class="btn btn-success">+</button>
+    </div>
+
+    <div class="col-md-7"><img src="images/foodClothing.png">Food & Clothing</div><div class="col-md-5">
+      <button ng-click="addCoin(-1, 'foodClothing')" class="btn btn-danger">-</button> {{categories.foodClothing}}
+      <button ng-click="addCoin(1, 'foodClothing')" class="btn btn-success">+</button>
+  </div>
+
+    <div class="col-md-7"><img src="images/loans.png">Loans</div><div class="col-md-5">
+      <button ng-click="addCoin(-1, 'loans')" class="btn btn-danger">-</button> {{categories.loans}}
+      <button ng-click="addCoin(1, 'loans')" class="btn btn-success">+</button>
+    </div>
+
+    <div class="col-md-7"><img src="images/miscellaneousExpenses.png">Miscellaneous Expenses</div><div class="col-md-5">
+      <button ng-click="addCoin(-1, 'miscellaneousExpenses')" class="btn btn-danger">-</button> {{categories.miscellaneousExpenses}}
+      <button ng-click="addCoin(1, 'miscellaneousExpenses')" class="btn btn-success">+</button>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-4"><button ng-click="resultPage()" class="btn-success btn">Next ({{timerTime}})</button></div></div>
+
+
+</div>
